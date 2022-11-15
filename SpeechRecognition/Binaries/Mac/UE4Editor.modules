@@ -1,8 +1,0 @@
-{
-	"Changelist" : 3039270,
-	"BuildId" : "",
-	"Modules" : 
-	{
-		"SpeechRecognition" : "UE4Editor-SpeechRecognition.dylib"
-	}
-}
