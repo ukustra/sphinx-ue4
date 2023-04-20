@@ -38,10 +38,10 @@ struct FSpeechRecognitionParam
 	// constructor
 	FSpeechRecognitionParam(char* name, ESpeechRecognitionParamType type, char* value) {
 		this->name = new char[strlen(name) + 1];
-		strcpy(this->name, name);
+		strcpy_s(this->name, strlen(name) + 1, name);
 		this->type = type;
 		this->value = new char[strlen(value) + 1];
-		strcpy(this->value, value);
+		strcpy_s(this->value, strlen(value) + 1, value);
 	}
 };
 
