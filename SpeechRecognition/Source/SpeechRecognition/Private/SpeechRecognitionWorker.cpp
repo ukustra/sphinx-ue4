@@ -36,7 +36,7 @@ string FSpeechRecognitionWorker::GetOriginalString(string s) const
 	wstring wstr(s.begin(), s.end());
 	wstring wstr_stripped;
 	for (int j = 0; j < s.size(); j++) {
-		int charInt = s[j];
+		const int charInt = s[j];
 		if (charInt != 40 && charInt != 41 
 			&& (charInt < 48 || charInt > 57) 
 			&& (charInt != 60 && charInt != 62)) {
@@ -61,7 +61,7 @@ void FSpeechRecognitionWorker::ShutDown() {
 bool FSpeechRecognitionWorker::EnableGrammarMode(FString grammarName)
 {
 	const char* name = TCHAR_TO_ANSI(*grammarName);
-	std::string grammarFile = contentPath_str + "model/" + langStr + "/grammars/" + name + ".gram";
+	const std::string grammarFile = contentPath_str + "model/" + langStr + "/grammars/" + name + ".gram";
 
 	// Init config and set default params
 	InitConfig();	
@@ -85,7 +85,7 @@ bool FSpeechRecognitionWorker::EnableKeywordMode(const TArray<FRecognitionPhrase
 bool FSpeechRecognitionWorker::EnableLanguageModel(FString InLanguageModel)
 {
 	const char* name = TCHAR_TO_ANSI(*InLanguageModel);
-	std::string langModel = contentPath_str + "model/" + langStr + "/language_models/" + name + ".lm";
+	const std::string langModel = contentPath_str + "model/" + langStr + "/language_models/" + name + ".lm";
 
 	// Init config and set default params
 	InitConfig();
@@ -97,7 +97,7 @@ bool FSpeechRecognitionWorker::EnableLanguageModel(FString InLanguageModel)
 	return true;
 }
 
-void FSpeechRecognitionWorker::AddWords(TArray<FRecognitionPhrase> InKeywords) {
+void FSpeechRecognitionWorker::AddWords(const TArray<FRecognitionPhrase>& InKeywords) {
 	this->keywords.clear();
 	for (auto It = InKeywords.CreateConstIterator(); It; ++It)
 	{
@@ -105,7 +105,7 @@ void FSpeechRecognitionWorker::AddWords(TArray<FRecognitionPhrase> InKeywords) {
 		std::string wordStr = std::string(TCHAR_TO_UTF8(*word.phrase));
 		transform(wordStr.begin(), wordStr.end(), wordStr.begin(), ::tolower);
 
-		EPhraseRecognitionTolerance toleranceEnum = word.tolerance;
+		const EPhraseRecognitionTolerance toleranceEnum = word.tolerance;
 		char* tolerance;
 		switch (toleranceEnum) {
 		case EPhraseRecognitionTolerance::VE_1:
@@ -142,8 +142,7 @@ void FSpeechRecognitionWorker::AddWords(TArray<FRecognitionPhrase> InKeywords) {
 			tolerance = (char*)"1e-2/";
 		}
 
-		pair<map<string, char*>::iterator, bool> ret;
-		ret = this->keywords.insert(pair<string, char*>(wordStr, tolerance));
+		const pair<map<string, char*>::iterator, bool> ret = this->keywords.insert(pair<string, char*>(wordStr, tolerance));
 		if (ret.second == false) {
 			this->keywords.erase(wordStr);
 			this->keywords.insert(pair<string, char*>(wordStr, tolerance));
@@ -159,7 +158,7 @@ int16 FSpeechRecognitionWorker::GetCurrentVolume() const
 void FSpeechRecognitionWorker::SetLanguage(ESpeechRecognitionLanguage InLanguage) {
 
 	// set Content Path
-	FString contentPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir());
+	const FString contentPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir());
 	contentPath_str = std::string(TCHAR_TO_UTF8(*contentPath));
 	std::string languageString;
 	this->language = InLanguage;
@@ -204,7 +203,7 @@ void FSpeechRecognitionWorker::InitConfig() {
 		NULL);
 
 	// loop over, and set sphinx params	
-	for (FSpeechRecognitionParam param : sphinxParams)
+	for (const FSpeechRecognitionParam& param : sphinxParams)
 	{
 		if (param.type == ESpeechRecognitionParamType::VE_FLOAT)
 		{
@@ -236,19 +235,19 @@ void FSpeechRecognitionWorker::InitConfig() {
 
 }
 
-bool FSpeechRecognitionWorker::SetConfigParam(FString param, ESpeechRecognitionParamType type, FString value)
+bool FSpeechRecognitionWorker::SetConfigParam(const FString& param, ESpeechRecognitionParamType type, const FString& value)
 {
-	char* paramName = TCHAR_TO_UTF8(*param);
-	char* paramValue = TCHAR_TO_UTF8(*value);
+	const char* paramName = TCHAR_TO_UTF8(*param);
+	const char* paramValue = TCHAR_TO_UTF8(*value);
 
 	// Validate the incoming string, against the data type
 	if (type == ESpeechRecognitionParamType::VE_FLOAT)
 	{
-		double validationFloat = atof(paramValue);
+		const double validationFloat = atof(paramValue);
 		if (validationFloat == 0.0F) {
 			return false;
 		}
-		FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
+		const FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
 		sphinxParams.Add(sphinxParam);
 		return true;
 	}
@@ -257,13 +256,13 @@ bool FSpeechRecognitionWorker::SetConfigParam(FString param, ESpeechRecognitionP
 	{
 		if (value.Equals("true", ESearchCase::IgnoreCase)) {
 			paramValue = "1";
-			FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
+			const FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
 			sphinxParams.Add(sphinxParam);
 			return true;
 		}
 		if (value.Equals("false", ESearchCase::IgnoreCase)) {
 			paramValue = "0";
-			FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
+			const FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
 			sphinxParams.Add(sphinxParam);
 			return true;
 		}
@@ -272,7 +271,7 @@ bool FSpeechRecognitionWorker::SetConfigParam(FString param, ESpeechRecognitionP
 
 	if (type == ESpeechRecognitionParamType::VE_STRING)
 	{
-		FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
+		const FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
 		sphinxParams.Add(sphinxParam);
 		return true;
 	}
@@ -280,7 +279,7 @@ bool FSpeechRecognitionWorker::SetConfigParam(FString param, ESpeechRecognitionP
 	if (type == ESpeechRecognitionParamType::VE_INTEGER)
 	{
 		if (value.IsNumeric()) {
-			FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
+			const FSpeechRecognitionParam sphinxParam(paramName, type, paramValue);
 			sphinxParams.Add(sphinxParam);
 			return true;
 		}
@@ -295,13 +294,13 @@ void FSpeechRecognitionWorker::Stop() {
 
 bool FSpeechRecognitionWorker::StartThread(USpeechRecognitionSubsystem* manager) {
 	Manager = manager;
-	int32 threadIdx = ISpeechRecognition::Get().GetInstanceCounter();
-	FString threadName = FString("FSpeechRecognitionWorker:") + FString::FromInt(threadIdx);
+	const int32 threadIdx = ISpeechRecognition::Get().GetInstanceCounter();
+	const FString threadName = FString("FSpeechRecognitionWorker:") + FString::FromInt(threadIdx);
 	Thread = FRunnableThread::Create(this, *threadName, 0U, TPri_Highest);
 	return true;
 }
 
-void FSpeechRecognitionWorker::ClientMessage(FString text) {
+void FSpeechRecognitionWorker::ClientMessage(const FString& text) {
 	UE_LOG(SpeechRecognitionPlugin, Log, TEXT("%s"), *text);
 }
 

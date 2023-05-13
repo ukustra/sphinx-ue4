@@ -36,22 +36,25 @@ struct FSpeechRecognitionParam
 	char* value;
 
 	// constructor
-	FSpeechRecognitionParam(char* name, ESpeechRecognitionParamType type, char* value) {
-		this->name = new char[strlen(name) + 1];
-		strcpy(this->name, name);
+	FSpeechRecognitionParam(const char* name, ESpeechRecognitionParamType type, const char* value) {
+		const size_t nameLenght = strlen(name) + 1;
+		const size_t valueLenght = strlen(value) + 1;
+		
+		this->name = new char[nameLenght];
+		strcpy_s(this->name, nameLenght, name);
 		this->type = type;
-		this->value = new char[strlen(value) + 1];
-		strcpy(this->value, value);
+		this->value = new char[valueLenght];
+		strcpy_s(this->value, valueLenght, value);
 	}
 };
 
-class FSpeechRecognitionWorker :public FRunnable
+class FSpeechRecognitionWorker : public FRunnable
 {
 
 private:
 	// Sphinx
-	ps_decoder_t *ps = NULL;
-	cmd_ln_t *config = NULL;
+	ps_decoder_t *ps = nullptr;
+	cmd_ln_t *config = nullptr;
 	ad_rec_t *ad;
 	int16 adbuf[1024];
 	uint8 utt_started, in_speech;
@@ -81,7 +84,7 @@ private:
 	FThreadSafeCounter StopTaskCounter;
 
 	//Language
-	const char* langStr = NULL;
+	const char* langStr = nullptr;
 
 	//Paths
 	std::string argFilePath;
@@ -104,11 +107,11 @@ private:
 
 public:
 	FSpeechRecognitionWorker();
-	virtual ~FSpeechRecognitionWorker();
+	virtual ~FSpeechRecognitionWorker() override;
 
 	//FRunnable interface
-	virtual void Stop();
-	virtual uint32 Run();
+	virtual void Stop() override;
+	virtual uint32 Run() override;
 
 	//Methods to switch recognition modes
 	bool EnableKeywordMode(const TArray<FRecognitionPhrase>& wordList);
@@ -116,16 +119,16 @@ public:
 	bool EnableLanguageModel(FString InLanguageModel);
 
 	//Action methods
-	void AddWords(TArray<FRecognitionPhrase> InKeywords);
+	void AddWords(const TArray<FRecognitionPhrase>& InKeywords);
 	int16 GetCurrentVolume() const;
 	void InitConfig();
-	bool SetConfigParam(FString param, ESpeechRecognitionParamType type, FString value);
+	bool SetConfigParam(const FString& param, ESpeechRecognitionParamType type, const FString& value);
 	void SetLanguage(ESpeechRecognitionLanguage InLanguage);
 	bool StartThread(USpeechRecognitionSubsystem* manager);
 	void ShutDown();
 
 	// Print Debug Text
-	static void ClientMessage(FString txt);
+	static void ClientMessage(const FString& txt);
 
 };
 
