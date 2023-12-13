@@ -36,7 +36,7 @@ void FSpeechRecognition::StartupModule()
     }
 }
 
-bool FSpeechRecognition::SearchForDllPath(FString _searchBase, FString _dllName)
+bool FSpeechRecognition::SearchForDllPath(const FString& _searchBase, FString _dllName)
 {
 	//Search Plugins folder for an instance of Dll.dll, and add to platform search path
 	TArray<FString> directoriesToSkip;
