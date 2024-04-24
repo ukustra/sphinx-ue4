@@ -1,5 +1,9 @@
 {
 	"OutputFiles": [
-		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SpeechRecognition\\Module.SpeechRecognition.cpp.obj"
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SpeechRecognition\\Module.SpeechRecognition.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SpeechRecognition\\SpeechRecognition.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SpeechRecognition\\SpeechRecognitionGameStateBase.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SpeechRecognition\\SpeechRecognitionSubsystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SpeechRecognition\\SpeechRecognitionWorker.cpp.obj"
 	]
 }
