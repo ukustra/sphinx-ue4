@@ -5,12 +5,14 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "SpeechRecognition/Public/SpeechRecognitionSubsystem.h"
-#include "SpeechRecognition/Public/SpeechRecognition.h"
+#include "SpeechRecognitionSubsystem.h"
+#include "SpeechRecognition.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeSpeechRecognitionSubsystem() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_UWorldSubsystem();
 SPEECHRECOGNITION_API UClass* Z_Construct_UClass_USpeechRecognitionSubsystem();
 SPEECHRECOGNITION_API UClass* Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister();
@@ -23,9 +25,9 @@ SPEECHRECOGNITION_API UFunction* Z_Construct_UDelegateFunction_SpeechRecognition
 SPEECHRECOGNITION_API UScriptStruct* Z_Construct_UScriptStruct_FRecognisedPhrases();
 SPEECHRECOGNITION_API UScriptStruct* Z_Construct_UScriptStruct_FRecognitionPhrase();
 UPackage* Z_Construct_UPackage__Script_SpeechRecognition();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Delegate FStartedSpeakingSignature
+// ********** Begin Delegate FStartedSpeakingSignature *********************************************
 struct Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics
 {
 #if WITH_METADATA
@@ -33,15 +35,15 @@ struct Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature_
 		{ "ModuleRelativePath", "Public/SpeechRecognitionSubsystem.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "StartedSpeakingSignature__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "StartedSpeakingSignature__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::FuncParams);
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
@@ -49,9 +51,9 @@ void FStartedSpeakingSignature_DelegateWrapper(const FMulticastScriptDelegate& S
 {
 	StartedSpeakingSignature.ProcessMulticastDelegate<UObject>(NULL);
 }
-// End Delegate FStartedSpeakingSignature
+// ********** End Delegate FStartedSpeakingSignature ***********************************************
 
-// Begin Delegate FStoppedSpeakingSignature
+// ********** Begin Delegate FStoppedSpeakingSignature *********************************************
 struct Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics
 {
 #if WITH_METADATA
@@ -59,15 +61,15 @@ struct Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature_
 		{ "ModuleRelativePath", "Public/SpeechRecognitionSubsystem.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "StoppedSpeakingSignature__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "StoppedSpeakingSignature__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::FuncParams);
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
@@ -75,9 +77,9 @@ void FStoppedSpeakingSignature_DelegateWrapper(const FMulticastScriptDelegate& S
 {
 	StoppedSpeakingSignature.ProcessMulticastDelegate<UObject>(NULL);
 }
-// End Delegate FStoppedSpeakingSignature
+// ********** End Delegate FStoppedSpeakingSignature ***********************************************
 
-// Begin Delegate FWordsSpokenSignature
+// ********** Begin Delegate FWordsSpokenSignature *************************************************
 struct Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics
 {
 	struct _Script_SpeechRecognition_eventWordsSpokenSignature_Parms
@@ -91,21 +93,21 @@ struct Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__Del
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Text;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FFunctionParams FuncParams;
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_SpeechRecognition_eventWordsSpokenSignature_Parms, Text), Z_Construct_UScriptStruct_FRecognisedPhrases, METADATA_PARAMS(0, nullptr) }; // 3752346138
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_SpeechRecognition_eventWordsSpokenSignature_Parms, Text), Z_Construct_UScriptStruct_FRecognisedPhrases, METADATA_PARAMS(0, nullptr) }; // 1778546128
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::NewProp_Text,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "WordsSpokenSignature__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::_Script_SpeechRecognition_eventWordsSpokenSignature_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "WordsSpokenSignature__DelegateSignature", Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::_Script_SpeechRecognition_eventWordsSpokenSignature_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::_Script_SpeechRecognition_eventWordsSpokenSignature_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::FuncParams);
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
@@ -119,9 +121,9 @@ void FWordsSpokenSignature_DelegateWrapper(const FMulticastScriptDelegate& Words
 	Parms.Text=Text;
 	WordsSpokenSignature.ProcessMulticastDelegate<UObject>(&Parms);
 }
-// End Delegate FWordsSpokenSignature
+// ********** End Delegate FWordsSpokenSignature ***************************************************
 
-// Begin Delegate FUnknownPhraseSignature
+// ********** Begin Delegate FUnknownPhraseSignature ***********************************************
 struct Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics
 {
 #if WITH_METADATA
@@ -129,15 +131,15 @@ struct Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__D
 		{ "ModuleRelativePath", "Public/SpeechRecognitionSubsystem.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "UnknownPhraseSignature__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition, nullptr, "UnknownPhraseSignature__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::FuncParams);
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
@@ -145,9 +147,9 @@ void FUnknownPhraseSignature_DelegateWrapper(const FMulticastScriptDelegate& Unk
 {
 	UnknownPhraseSignature.ProcessMulticastDelegate<UObject>(NULL);
 }
-// End Delegate FUnknownPhraseSignature
+// ********** End Delegate FUnknownPhraseSignature *************************************************
 
-// Begin Class USpeechRecognitionSubsystem Function EnableGrammarMode
+// ********** Begin Class USpeechRecognitionSubsystem Function EnableGrammarMode *******************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics
 {
 	struct SpeechRecognitionSubsystem_eventEnableGrammarMode_Parms
@@ -180,7 +182,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "EnableGrammarMode", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::SpeechRecognitionSubsystem_eventEnableGrammarMode_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "EnableGrammarMode", Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::SpeechRecognitionSubsystem_eventEnableGrammarMode_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode_Statics::SpeechRecognitionSubsystem_eventEnableGrammarMode_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode()
 {
@@ -199,9 +201,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execEnableGrammarMode)
 	*(bool*)Z_Param__Result=P_THIS->EnableGrammarMode(Z_Param_grammarName);
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function EnableGrammarMode
+// ********** End Class USpeechRecognitionSubsystem Function EnableGrammarMode *********************
 
-// Begin Class USpeechRecognitionSubsystem Function EnableKeywordMode
+// ********** Begin Class USpeechRecognitionSubsystem Function EnableKeywordMode *******************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics
 {
 	struct SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms
@@ -229,8 +231,8 @@ struct Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Stati
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::NewProp_wordList_Inner = { "wordList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FRecognitionPhrase, METADATA_PARAMS(0, nullptr) }; // 2584790491
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::NewProp_wordList = { "wordList", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms, wordList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_wordList_MetaData), NewProp_wordList_MetaData) }; // 2584790491
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::NewProp_wordList_Inner = { "wordList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FRecognitionPhrase, METADATA_PARAMS(0, nullptr) }; // 1793235022
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::NewProp_wordList = { "wordList", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms, wordList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_wordList_MetaData), NewProp_wordList_MetaData) }; // 1793235022
 void Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms*)Obj)->ReturnValue = 1;
@@ -242,7 +244,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "EnableKeywordMode", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "EnableKeywordMode", Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode_Statics::SpeechRecognitionSubsystem_eventEnableKeywordMode_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode()
 {
@@ -261,9 +263,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execEnableKeywordMode)
 	*(bool*)Z_Param__Result=P_THIS->EnableKeywordMode(Z_Param_Out_wordList);
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function EnableKeywordMode
+// ********** End Class USpeechRecognitionSubsystem Function EnableKeywordMode *********************
 
-// Begin Class USpeechRecognitionSubsystem Function EnableLanguageModel
+// ********** Begin Class USpeechRecognitionSubsystem Function EnableLanguageModel *****************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics
 {
 	struct SpeechRecognitionSubsystem_eventEnableLanguageModel_Parms
@@ -296,7 +298,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "EnableLanguageModel", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::SpeechRecognitionSubsystem_eventEnableLanguageModel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "EnableLanguageModel", Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::SpeechRecognitionSubsystem_eventEnableLanguageModel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel_Statics::SpeechRecognitionSubsystem_eventEnableLanguageModel_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel()
 {
@@ -315,9 +317,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execEnableLanguageModel)
 	*(bool*)Z_Param__Result=P_THIS->EnableLanguageModel(Z_Param_languageModel);
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function EnableLanguageModel
+// ********** End Class USpeechRecognitionSubsystem Function EnableLanguageModel *******************
 
-// Begin Class USpeechRecognitionSubsystem Function GetCurrentVolume
+// ********** Begin Class USpeechRecognitionSubsystem Function GetCurrentVolume ********************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics
 {
 	struct SpeechRecognitionSubsystem_eventGetCurrentVolume_Parms
@@ -343,7 +345,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "GetCurrentVolume", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::SpeechRecognitionSubsystem_eventGetCurrentVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "GetCurrentVolume", Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::SpeechRecognitionSubsystem_eventGetCurrentVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume_Statics::SpeechRecognitionSubsystem_eventGetCurrentVolume_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume()
 {
@@ -361,9 +363,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execGetCurrentVolume)
 	*(int32*)Z_Param__Result=P_THIS->GetCurrentVolume();
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function GetCurrentVolume
+// ********** End Class USpeechRecognitionSubsystem Function GetCurrentVolume **********************
 
-// Begin Class USpeechRecognitionSubsystem Function Init
+// ********** Begin Class USpeechRecognitionSubsystem Function Init ********************************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics
 {
 	struct SpeechRecognitionSubsystem_eventInit_Parms
@@ -409,7 +411,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "Init", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::SpeechRecognitionSubsystem_eventInit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "Init", Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::SpeechRecognitionSubsystem_eventInit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_Init_Statics::SpeechRecognitionSubsystem_eventInit_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_Init()
 {
@@ -429,9 +431,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execInit)
 	*(bool*)Z_Param__Result=P_THIS->Init(ESpeechRecognitionLanguage(Z_Param_Language),Z_Param_bInitDefaultConfigParams);
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function Init
+// ********** End Class USpeechRecognitionSubsystem Function Init **********************************
 
-// Begin Class USpeechRecognitionSubsystem Function SetConfigParam
+// ********** Begin Class USpeechRecognitionSubsystem Function SetConfigParam **********************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics
 {
 	struct SpeechRecognitionSubsystem_eventSetConfigParam_Parms
@@ -475,7 +477,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "SetConfigParam", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::SpeechRecognitionSubsystem_eventSetConfigParam_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "SetConfigParam", Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::SpeechRecognitionSubsystem_eventSetConfigParam_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam_Statics::SpeechRecognitionSubsystem_eventSetConfigParam_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam()
 {
@@ -496,9 +498,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execSetConfigParam)
 	*(bool*)Z_Param__Result=P_THIS->SetConfigParam(Z_Param_param,ESpeechRecognitionParamType(Z_Param_type),Z_Param_value);
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function SetConfigParam
+// ********** End Class USpeechRecognitionSubsystem Function SetConfigParam ************************
 
-// Begin Class USpeechRecognitionSubsystem Function Shutdown
+// ********** Begin Class USpeechRecognitionSubsystem Function Shutdown ****************************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics
 {
 	struct SpeechRecognitionSubsystem_eventShutdown_Parms
@@ -527,7 +529,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeec
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "Shutdown", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::SpeechRecognitionSubsystem_eventShutdown_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "Shutdown", Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::SpeechRecognitionSubsystem_eventShutdown_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown_Statics::SpeechRecognitionSubsystem_eventShutdown_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown()
 {
@@ -545,9 +547,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execShutdown)
 	*(bool*)Z_Param__Result=P_THIS->Shutdown();
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function Shutdown
+// ********** End Class USpeechRecognitionSubsystem Function Shutdown ******************************
 
-// Begin Class USpeechRecognitionSubsystem Function StartedSpeaking_method
+// ********** Begin Class USpeechRecognitionSubsystem Function StartedSpeaking_method **************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics
 {
 #if WITH_METADATA
@@ -557,7 +559,7 @@ struct Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "StartedSpeaking_method", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "StartedSpeaking_method", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -574,9 +576,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execStartedSpeaking_method)
 	P_THIS->StartedSpeaking_method();
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function StartedSpeaking_method
+// ********** End Class USpeechRecognitionSubsystem Function StartedSpeaking_method ****************
 
-// Begin Class USpeechRecognitionSubsystem Function StoppedSpeaking_method
+// ********** Begin Class USpeechRecognitionSubsystem Function StoppedSpeaking_method **************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics
 {
 #if WITH_METADATA
@@ -586,7 +588,7 @@ struct Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "StoppedSpeaking_method", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "StoppedSpeaking_method", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -603,9 +605,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execStoppedSpeaking_method)
 	P_THIS->StoppedSpeaking_method();
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function StoppedSpeaking_method
+// ********** End Class USpeechRecognitionSubsystem Function StoppedSpeaking_method ****************
 
-// Begin Class USpeechRecognitionSubsystem Function UnknownPhrase_method
+// ********** Begin Class USpeechRecognitionSubsystem Function UnknownPhrase_method ****************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics
 {
 #if WITH_METADATA
@@ -615,7 +617,7 @@ struct Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_St
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "UnknownPhrase_method", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "UnknownPhrase_method", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -632,9 +634,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execUnknownPhrase_method)
 	P_THIS->UnknownPhrase_method();
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function UnknownPhrase_method
+// ********** End Class USpeechRecognitionSubsystem Function UnknownPhrase_method ******************
 
-// Begin Class USpeechRecognitionSubsystem Function WordsSpoken_method
+// ********** Begin Class USpeechRecognitionSubsystem Function WordsSpoken_method ******************
 struct Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics
 {
 	struct SpeechRecognitionSubsystem_eventWordsSpoken_method_Parms
@@ -652,12 +654,12 @@ struct Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Stat
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::NewProp_phrases = { "phrases", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpeechRecognitionSubsystem_eventWordsSpoken_method_Parms, phrases), Z_Construct_UScriptStruct_FRecognisedPhrases, METADATA_PARAMS(0, nullptr) }; // 3752346138
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::NewProp_phrases = { "phrases", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpeechRecognitionSubsystem_eventWordsSpoken_method_Parms, phrases), Z_Construct_UScriptStruct_FRecognisedPhrases, METADATA_PARAMS(0, nullptr) }; // 1778546128
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::NewProp_phrases,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "WordsSpoken_method", nullptr, nullptr, Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::SpeechRecognitionSubsystem_eventWordsSpoken_method_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USpeechRecognitionSubsystem, nullptr, "WordsSpoken_method", Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::PropPointers), sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::SpeechRecognitionSubsystem_eventWordsSpoken_method_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::Function_MetaDataParams), Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method_Statics::SpeechRecognitionSubsystem_eventWordsSpoken_method_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method()
 {
@@ -676,9 +678,9 @@ DEFINE_FUNCTION(USpeechRecognitionSubsystem::execWordsSpoken_method)
 	P_THIS->WordsSpoken_method(Z_Param_phrases);
 	P_NATIVE_END;
 }
-// End Class USpeechRecognitionSubsystem Function WordsSpoken_method
+// ********** End Class USpeechRecognitionSubsystem Function WordsSpoken_method ********************
 
-// Begin Class USpeechRecognitionSubsystem
+// ********** Begin Class USpeechRecognitionSubsystem **********************************************
 void USpeechRecognitionSubsystem::StaticRegisterNativesUSpeechRecognitionSubsystem()
 {
 	UClass* Class = USpeechRecognitionSubsystem::StaticClass();
@@ -697,10 +699,34 @@ void USpeechRecognitionSubsystem::StaticRegisterNativesUSpeechRecognitionSubsyst
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(USpeechRecognitionSubsystem);
+FClassRegistrationInfo Z_Registration_Info_UClass_USpeechRecognitionSubsystem;
+UClass* USpeechRecognitionSubsystem::GetPrivateStaticClass()
+{
+	using TClass = USpeechRecognitionSubsystem;
+	if (!Z_Registration_Info_UClass_USpeechRecognitionSubsystem.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("SpeechRecognitionSubsystem"),
+			Z_Registration_Info_UClass_USpeechRecognitionSubsystem.InnerSingleton,
+			StaticRegisterNativesUSpeechRecognitionSubsystem,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_USpeechRecognitionSubsystem.InnerSingleton;
+}
 UClass* Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister()
 {
-	return USpeechRecognitionSubsystem::StaticClass();
+	return USpeechRecognitionSubsystem::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_USpeechRecognitionSubsystem_Statics
 {
@@ -734,17 +760,17 @@ struct Z_Construct_UClass_USpeechRecognitionSubsystem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode, "EnableGrammarMode" }, // 2547358300
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode, "EnableKeywordMode" }, // 1125334730
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel, "EnableLanguageModel" }, // 699508587
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume, "GetCurrentVolume" }, // 3137867292
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_Init, "Init" }, // 39901620
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam, "SetConfigParam" }, // 1255430175
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown, "Shutdown" }, // 177418561
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method, "StartedSpeaking_method" }, // 3706853265
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method, "StoppedSpeaking_method" }, // 538917194
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method, "UnknownPhrase_method" }, // 1504436575
-		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method, "WordsSpoken_method" }, // 2995273770
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableGrammarMode, "EnableGrammarMode" }, // 2666646947
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableKeywordMode, "EnableKeywordMode" }, // 3329994508
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_EnableLanguageModel, "EnableLanguageModel" }, // 1092029099
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_GetCurrentVolume, "GetCurrentVolume" }, // 231935885
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_Init, "Init" }, // 605515589
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_SetConfigParam, "SetConfigParam" }, // 3937661635
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_Shutdown, "Shutdown" }, // 1722999242
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_StartedSpeaking_method, "StartedSpeaking_method" }, // 3534121969
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_StoppedSpeaking_method, "StoppedSpeaking_method" }, // 1505321634
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_UnknownPhrase_method, "UnknownPhrase_method" }, // 4083237643
+		{ &Z_Construct_UFunction_USpeechRecognitionSubsystem_WordsSpoken_method, "WordsSpoken_method" }, // 154458047
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -752,10 +778,10 @@ struct Z_Construct_UClass_USpeechRecognitionSubsystem_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnWordsSpoken = { "OnWordsSpoken", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnWordsSpoken), Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnWordsSpoken_MetaData), NewProp_OnWordsSpoken_MetaData) }; // 2063304777
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnUnknownPhrase = { "OnUnknownPhrase", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnUnknownPhrase), Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUnknownPhrase_MetaData), NewProp_OnUnknownPhrase_MetaData) }; // 3863231347
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnStartedSpeaking = { "OnStartedSpeaking", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnStartedSpeaking), Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnStartedSpeaking_MetaData), NewProp_OnStartedSpeaking_MetaData) }; // 3259436362
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnStoppedSpeaking = { "OnStoppedSpeaking", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnStoppedSpeaking), Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnStoppedSpeaking_MetaData), NewProp_OnStoppedSpeaking_MetaData) }; // 3604679963
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnWordsSpoken = { "OnWordsSpoken", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnWordsSpoken), Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnWordsSpoken_MetaData), NewProp_OnWordsSpoken_MetaData) }; // 1427358373
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnUnknownPhrase = { "OnUnknownPhrase", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnUnknownPhrase), Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUnknownPhrase_MetaData), NewProp_OnUnknownPhrase_MetaData) }; // 1268431015
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnStartedSpeaking = { "OnStartedSpeaking", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnStartedSpeaking), Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnStartedSpeaking_MetaData), NewProp_OnStartedSpeaking_MetaData) }; // 334598597
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnStoppedSpeaking = { "OnStoppedSpeaking", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USpeechRecognitionSubsystem, OnStoppedSpeaking), Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnStoppedSpeaking_MetaData), NewProp_OnStoppedSpeaking_MetaData) }; // 2614978623
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnWordsSpoken,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USpeechRecognitionSubsystem_Statics::NewProp_OnUnknownPhrase,
@@ -791,24 +817,21 @@ UClass* Z_Construct_UClass_USpeechRecognitionSubsystem()
 	}
 	return Z_Registration_Info_UClass_USpeechRecognitionSubsystem.OuterSingleton;
 }
-template<> SPEECHRECOGNITION_API UClass* StaticClass<USpeechRecognitionSubsystem>()
-{
-	return USpeechRecognitionSubsystem::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(USpeechRecognitionSubsystem);
 USpeechRecognitionSubsystem::~USpeechRecognitionSubsystem() {}
-// End Class USpeechRecognitionSubsystem
+// ********** End Class USpeechRecognitionSubsystem ************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h__Script_SpeechRecognition_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USpeechRecognitionSubsystem, USpeechRecognitionSubsystem::StaticClass, TEXT("USpeechRecognitionSubsystem"), &Z_Registration_Info_UClass_USpeechRecognitionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USpeechRecognitionSubsystem), 4216477329U) },
+		{ Z_Construct_UClass_USpeechRecognitionSubsystem, USpeechRecognitionSubsystem::StaticClass, TEXT("USpeechRecognitionSubsystem"), &Z_Registration_Info_UClass_USpeechRecognitionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USpeechRecognitionSubsystem), 2123630917U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_1369943497(TEXT("/Script/SpeechRecognition"),
-	Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h__Script_SpeechRecognition_2185034654(TEXT("/Script/SpeechRecognition"),
+	Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h__Script_SpeechRecognition_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h__Script_SpeechRecognition_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

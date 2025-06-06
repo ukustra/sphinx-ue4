@@ -5,33 +5,39 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "SpeechRecognition.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef SPEECHRECOGNITION_SpeechRecognition_generated_h
 #error "SpeechRecognition.generated.h already included, missing '#pragma once' in SpeechRecognition.h"
 #endif
 #define SPEECHRECOGNITION_SpeechRecognition_generated_h
 
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+// ********** Begin ScriptStruct FRecognisedPhrases ************************************************
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h_12_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics; \
 	SPEECHRECOGNITION_API static class UScriptStruct* StaticStruct();
 
 
-template<> SPEECHRECOGNITION_API UScriptStruct* StaticStruct<struct FRecognisedPhrases>();
+struct FRecognisedPhrases;
+// ********** End ScriptStruct FRecognisedPhrases **************************************************
 
+// ********** Begin ScriptStruct FRecognitionPhrase ************************************************
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h_67_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics; \
 	SPEECHRECOGNITION_API static class UScriptStruct* StaticStruct();
 
 
-template<> SPEECHRECOGNITION_API UScriptStruct* StaticStruct<struct FRecognitionPhrase>();
+struct FRecognitionPhrase;
+// ********** End ScriptStruct FRecognitionPhrase **************************************************
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h
 
-
+// ********** Begin Enum ESpeechRecognitionMode ****************************************************
 #define FOREACH_ENUM_ESPEECHRECOGNITIONMODE(op) \
 	op(ESpeechRecognitionMode::VE_KEYWORD) \
 	op(ESpeechRecognitionMode::VE_GRAMMAR) \
@@ -40,7 +46,9 @@ template<> SPEECHRECOGNITION_API UScriptStruct* StaticStruct<struct FRecognition
 enum class ESpeechRecognitionMode : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionMode> { enum { Value = true }; };
 template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionMode>();
+// ********** End Enum ESpeechRecognitionMode ******************************************************
 
+// ********** Begin Enum ESpeechRecognitionParamType ***********************************************
 #define FOREACH_ENUM_ESPEECHRECOGNITIONPARAMTYPE(op) \
 	op(ESpeechRecognitionParamType::VE_FLOAT) \
 	op(ESpeechRecognitionParamType::VE_BOOLEAN) \
@@ -50,7 +58,9 @@ template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionMode>();
 enum class ESpeechRecognitionParamType : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionParamType> { enum { Value = true }; };
 template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionParamType>();
+// ********** End Enum ESpeechRecognitionParamType *************************************************
 
+// ********** Begin Enum ESpeechRecognitionLanguage ************************************************
 #define FOREACH_ENUM_ESPEECHRECOGNITIONLANGUAGE(op) \
 	op(ESpeechRecognitionLanguage::VE_English) \
 	op(ESpeechRecognitionLanguage::VE_Chinese) \
@@ -61,7 +71,9 @@ template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionParamType>(
 enum class ESpeechRecognitionLanguage : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionLanguage> { enum { Value = true }; };
 template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionLanguage>();
+// ********** End Enum ESpeechRecognitionLanguage **************************************************
 
+// ********** Begin Enum EPhraseRecognitionTolerance ***********************************************
 #define FOREACH_ENUM_EPHRASERECOGNITIONTOLERANCE(op) \
 	op(EPhraseRecognitionTolerance::VE_1) \
 	op(EPhraseRecognitionTolerance::VE_2) \
@@ -77,5 +89,6 @@ template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionLanguage>()
 enum class EPhraseRecognitionTolerance : uint8;
 template<> struct TIsUEnumClass<EPhraseRecognitionTolerance> { enum { Value = true }; };
 template<> SPEECHRECOGNITION_API UEnum* StaticEnum<EPhraseRecognitionTolerance>();
+// ********** End Enum EPhraseRecognitionTolerance *************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
