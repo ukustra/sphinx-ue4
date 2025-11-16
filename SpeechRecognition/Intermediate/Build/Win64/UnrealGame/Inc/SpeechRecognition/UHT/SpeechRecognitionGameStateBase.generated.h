@@ -18,14 +18,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ASpeechRecognitionGameStateBase ******************************************
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h_15_CALLBACK_WRAPPERS
+struct Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics;
 SPEECHRECOGNITION_API UClass* Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister();
 
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesASpeechRecognitionGameStateBase(); \
-	friend struct Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics; \
+	friend struct ::Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend SPEECHRECOGNITION_API UClass* Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister(); \
+	friend SPEECHRECOGNITION_API UClass* ::Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister(); \
 public: \
 	DECLARE_CLASS2(ASpeechRecognitionGameStateBase, AGameStateBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SpeechRecognition"), Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister) \
 	DECLARE_SERIALIZER(ASpeechRecognitionGameStateBase)

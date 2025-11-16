@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 enum class ESpeechRecognitionLanguage : uint8;
 enum class ESpeechRecognitionParamType : uint8;
 struct FRecognisedPhrases;
@@ -64,14 +63,15 @@ SPEECHRECOGNITION_API void FUnknownPhraseSignature_DelegateWrapper(const FMultic
 	DECLARE_FUNCTION(execEnableKeywordMode);
 
 
+struct Z_Construct_UClass_USpeechRecognitionSubsystem_Statics;
 SPEECHRECOGNITION_API UClass* Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister();
 
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSpeechRecognitionSubsystem(); \
-	friend struct Z_Construct_UClass_USpeechRecognitionSubsystem_Statics; \
+	friend struct ::Z_Construct_UClass_USpeechRecognitionSubsystem_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend SPEECHRECOGNITION_API UClass* Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister(); \
+	friend SPEECHRECOGNITION_API UClass* ::Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister(); \
 public: \
 	DECLARE_CLASS2(USpeechRecognitionSubsystem, UWorldSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SpeechRecognition"), Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister) \
 	DECLARE_SERIALIZER(USpeechRecognitionSubsystem)

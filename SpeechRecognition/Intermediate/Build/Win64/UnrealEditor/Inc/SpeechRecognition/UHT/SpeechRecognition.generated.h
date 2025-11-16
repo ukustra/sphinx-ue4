@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FRecognisedPhrases ************************************************
+struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics;
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h_12_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics; \
+	friend struct ::Z_Construct_UScriptStruct_FRecognisedPhrases_Statics; \
 	SPEECHRECOGNITION_API static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FRecognisedPhrases;
 // ********** End ScriptStruct FRecognisedPhrases **************************************************
 
 // ********** Begin ScriptStruct FRecognitionPhrase ************************************************
+struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics;
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h_67_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics; \
+	friend struct ::Z_Construct_UScriptStruct_FRecognitionPhrase_Statics; \
 	SPEECHRECOGNITION_API static class UScriptStruct* StaticStruct();
 
 
@@ -45,7 +47,7 @@ struct FRecognitionPhrase;
 
 enum class ESpeechRecognitionMode : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionMode> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionMode>();
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionMode>();
 // ********** End Enum ESpeechRecognitionMode ******************************************************
 
 // ********** Begin Enum ESpeechRecognitionParamType ***********************************************
@@ -57,7 +59,7 @@ template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionMode>();
 
 enum class ESpeechRecognitionParamType : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionParamType> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionParamType>();
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionParamType>();
 // ********** End Enum ESpeechRecognitionParamType *************************************************
 
 // ********** Begin Enum ESpeechRecognitionLanguage ************************************************
@@ -70,7 +72,7 @@ template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionParamType>(
 
 enum class ESpeechRecognitionLanguage : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionLanguage> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionLanguage>();
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionLanguage>();
 // ********** End Enum ESpeechRecognitionLanguage **************************************************
 
 // ********** Begin Enum EPhraseRecognitionTolerance ***********************************************
@@ -88,7 +90,7 @@ template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionLanguage>()
 
 enum class EPhraseRecognitionTolerance : uint8;
 template<> struct TIsUEnumClass<EPhraseRecognitionTolerance> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<EPhraseRecognitionTolerance>();
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<EPhraseRecognitionTolerance>();
 // ********** End Enum EPhraseRecognitionTolerance *************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

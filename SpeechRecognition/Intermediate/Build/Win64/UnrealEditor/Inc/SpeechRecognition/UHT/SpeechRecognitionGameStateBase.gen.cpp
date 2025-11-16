@@ -9,7 +9,7 @@
 #include "SpeechRecognition.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeSpeechRecognitionGameStateBase() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -37,9 +37,15 @@ struct Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognit
 		{ "ModuleRelativePath", "Public/SpeechRecognitionGameStateBase.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function K2_OnSpeechRecognitionSubsystemInitialized constinit property declarations 
+// ********** End Function K2_OnSpeechRecognitionSubsystemInitialized constinit property declarations 
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ASpeechRecognitionGameStateBase, nullptr, "K2_OnSpeechRecognitionSubsystemInitialized", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ASpeechRecognitionGameStateBase, nullptr, "K2_OnSpeechRecognitionSubsystemInitialized", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -52,9 +58,6 @@ UFunction* Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechReco
 // ********** End Class ASpeechRecognitionGameStateBase Function K2_OnSpeechRecognitionSubsystemInitialized 
 
 // ********** Begin Class ASpeechRecognitionGameStateBase ******************************************
-void ASpeechRecognitionGameStateBase::StaticRegisterNativesASpeechRecognitionGameStateBase()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase;
 UClass* ASpeechRecognitionGameStateBase::GetPrivateStaticClass()
 {
@@ -62,7 +65,7 @@ UClass* ASpeechRecognitionGameStateBase::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("SpeechRecognitionGameStateBase"),
 			Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase.InnerSingleton,
 			StaticRegisterNativesASpeechRecognitionGameStateBase,
@@ -105,25 +108,30 @@ struct Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics
 		{ "ToolTip", "Optional phrases to recognize" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class ASpeechRecognitionGameStateBase constinit property declarations **********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Language_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Language;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OptionalWorldList_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_OptionalWorldList;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class ASpeechRecognitionGameStateBase constinit property declarations ************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized, "K2_OnSpeechRecognitionSubsystemInitialized" }, // 1443644533
+		{ &Z_Construct_UFunction_ASpeechRecognitionGameStateBase_K2_OnSpeechRecognitionSubsystemInitialized, "K2_OnSpeechRecognitionSubsystemInitialized" }, // 4147570818
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASpeechRecognitionGameStateBase>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics
+
+// ********** Begin Class ASpeechRecognitionGameStateBase Property Definitions *********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_Language_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_Language = { "Language", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpeechRecognitionGameStateBase, Language), Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionLanguage, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Language_MetaData), NewProp_Language_MetaData) }; // 1599921248
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_OptionalWorldList_Inner = { "OptionalWorldList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FRecognitionPhrase, METADATA_PARAMS(0, nullptr) }; // 1793235022
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_OptionalWorldList = { "OptionalWorldList", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpeechRecognitionGameStateBase, OptionalWorldList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OptionalWorldList_MetaData), NewProp_OptionalWorldList_MetaData) }; // 1793235022
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_Language = { "Language", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpeechRecognitionGameStateBase, Language), Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionLanguage, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Language_MetaData), NewProp_Language_MetaData) }; // 2879068059
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_OptionalWorldList_Inner = { "OptionalWorldList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FRecognitionPhrase, METADATA_PARAMS(0, nullptr) }; // 1570367108
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_OptionalWorldList = { "OptionalWorldList", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpeechRecognitionGameStateBase, OptionalWorldList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OptionalWorldList_MetaData), NewProp_OptionalWorldList_MetaData) }; // 1570367108
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_Language_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_Language,
@@ -131,6 +139,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpeechRe
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::NewProp_OptionalWorldList,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::PropPointers) < 2048);
+// ********** End Class ASpeechRecognitionGameStateBase Property Definitions ***********************
 UObject* (*const Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AGameStateBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_SpeechRecognition,
@@ -148,9 +157,12 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ASpeechRecognitionGameS
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::PropPointers),
 	0,
-	0x009003A4u,
+	0x009002A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::Class_MetaDataParams), Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics::Class_MetaDataParams)
 };
+void ASpeechRecognitionGameStateBase::StaticRegisterNativesASpeechRecognitionGameStateBase()
+{
+}
 UClass* Z_Construct_UClass_ASpeechRecognitionGameStateBase()
 {
 	if (!Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase.OuterSingleton)
@@ -159,7 +171,7 @@ UClass* Z_Construct_UClass_ASpeechRecognitionGameStateBase()
 	}
 	return Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(ASpeechRecognitionGameStateBase);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, ASpeechRecognitionGameStateBase);
 ASpeechRecognitionGameStateBase::~ASpeechRecognitionGameStateBase() {}
 // ********** End Class ASpeechRecognitionGameStateBase ********************************************
 
@@ -167,13 +179,15 @@ ASpeechRecognitionGameStateBase::~ASpeechRecognitionGameStateBase() {}
 struct Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h__Script_SpeechRecognition_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpeechRecognitionGameStateBase, ASpeechRecognitionGameStateBase::StaticClass, TEXT("ASpeechRecognitionGameStateBase"), &Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpeechRecognitionGameStateBase), 1936845185U) },
+		{ Z_Construct_UClass_ASpeechRecognitionGameStateBase, ASpeechRecognitionGameStateBase::StaticClass, TEXT("ASpeechRecognitionGameStateBase"), &Z_Registration_Info_UClass_ASpeechRecognitionGameStateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpeechRecognitionGameStateBase), 389328072U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h__Script_SpeechRecognition_2604526400(TEXT("/Script/SpeechRecognition"),
+}; // Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h__Script_SpeechRecognition_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h__Script_SpeechRecognition_3135563244{
+	TEXT("/Script/SpeechRecognition"),
 	Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h__Script_SpeechRecognition_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h__Script_SpeechRecognition_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

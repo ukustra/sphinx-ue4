@@ -7,7 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSpeechRecognition_init() {}
-	SPEECHRECOGNITION_API UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature();
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");	SPEECHRECOGNITION_API UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature();
 	SPEECHRECOGNITION_API UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature();
 	SPEECHRECOGNITION_API UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature();
 	SPEECHRECOGNITION_API UFunction* Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature();
@@ -16,24 +16,24 @@ void EmptyLinkFunctionForGeneratedCodeSpeechRecognition_init() {}
 	{
 		if (!Z_Registration_Info_UPackage__Script_SpeechRecognition.OuterSingleton)
 		{
-			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature,
-			};
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/SpeechRecognition",
-				SingletonFuncArray,
-				UE_ARRAY_COUNT(SingletonFuncArray),
-				PKG_CompiledIn | 0x00000000,
-				0x785E94E7,
-				0x3097805D,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_SpeechRecognition.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_SpeechRecognition.OuterSingleton;
+		static UObject* (*const SingletonFuncArray[])() = {
+			(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_StartedSpeakingSignature__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_StoppedSpeakingSignature__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_UnknownPhraseSignature__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_SpeechRecognition_WordsSpokenSignature__DelegateSignature,
+		};
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/SpeechRecognition",
+			SingletonFuncArray,
+			UE_ARRAY_COUNT(SingletonFuncArray),
+			PKG_CompiledIn | 0x00000000,
+			0x685D030C,
+			0x3097805D,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_SpeechRecognition.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SpeechRecognition(Z_Construct_UPackage__Script_SpeechRecognition, TEXT("/Script/SpeechRecognition"), Z_Registration_Info_UPackage__Script_SpeechRecognition, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x785E94E7, 0x3097805D));
+	return Z_Registration_Info_UPackage__Script_SpeechRecognition.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SpeechRecognition(Z_Construct_UPackage__Script_SpeechRecognition, TEXT("/Script/SpeechRecognition"), Z_Registration_Info_UPackage__Script_SpeechRecognition, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x685D030C, 0x3097805D));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

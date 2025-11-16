@@ -1,0 +1,9 @@
+{
+	"OutputFiles": [
+		"Module.SpeechRecognition.cpp.obj",
+		"SpeechRecognition.cpp.obj",
+		"SpeechRecognitionGameStateBase.cpp.obj",
+		"SpeechRecognitionSubsystem.cpp.obj",
+		"SpeechRecognitionWorker.cpp.obj"
+	]
+}

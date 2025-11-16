@@ -8,7 +8,7 @@
 #include "SpeechRecognition.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeSpeechRecognition() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -22,17 +22,10 @@ UPackage* Z_Construct_UPackage__Script_SpeechRecognition();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FRecognisedPhrases ************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FRecognisedPhrases;
-class UScriptStruct* FRecognisedPhrases::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FRecognisedPhrases.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FRecognisedPhrases.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FRecognisedPhrases, (UObject*)Z_Construct_UPackage__Script_SpeechRecognition(), TEXT("RecognisedPhrases"));
-	}
-	return Z_Registration_Info_UScriptStruct_FRecognisedPhrases.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FRecognisedPhrases); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FRecognisedPhrases); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -45,15 +38,29 @@ struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics
 		{ "ModuleRelativePath", "Public/SpeechRecognition.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FRecognisedPhrases constinit property declarations ****************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_phrases_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_phrases;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FRecognisedPhrases constinit property declarations ******************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FRecognisedPhrases>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FRecognisedPhrases;
+class UScriptStruct* FRecognisedPhrases::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FRecognisedPhrases.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FRecognisedPhrases.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FRecognisedPhrases, (UObject*)Z_Construct_UPackage__Script_SpeechRecognition(), TEXT("RecognisedPhrases"));
+	}
+	return Z_Registration_Info_UScriptStruct_FRecognisedPhrases.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FRecognisedPhrases Property Definitions ***************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::NewProp_phrases_Inner = { "phrases", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::NewProp_phrases = { "phrases", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRecognisedPhrases, phrases), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_phrases_MetaData), NewProp_phrases_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::PropPointers[] = {
@@ -61,6 +68,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::NewProp_phrases,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FRecognisedPhrases Property Definitions *****************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_SpeechRecognition,
 	nullptr,
@@ -80,7 +88,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FRecognisedPhrases()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FRecognisedPhrases.InnerSingleton, Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FRecognisedPhrases.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FRecognisedPhrases.InnerSingleton);
 }
 // ********** End ScriptStruct FRecognisedPhrases **************************************************
 
@@ -94,7 +102,7 @@ static UEnum* ESpeechRecognitionMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_ESpeechRecognitionMode.OuterSingleton;
 }
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionMode>()
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionMode>()
 {
 	return ESpeechRecognitionMode_StaticEnum();
 }
@@ -118,7 +126,7 @@ struct Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionMode_Statics
 		{ "ESpeechRecognitionMode::VE_LANGUAGE_MODEL", (int64)ESpeechRecognitionMode::VE_LANGUAGE_MODEL },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition,
 	nullptr,
@@ -151,7 +159,7 @@ static UEnum* ESpeechRecognitionParamType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_ESpeechRecognitionParamType.OuterSingleton;
 }
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionParamType>()
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionParamType>()
 {
 	return ESpeechRecognitionParamType_StaticEnum();
 }
@@ -178,7 +186,7 @@ struct Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionParamType_Statics
 		{ "ESpeechRecognitionParamType::VE_INTEGER", (int64)ESpeechRecognitionParamType::VE_INTEGER },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionParamType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionParamType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition,
 	nullptr,
@@ -211,7 +219,7 @@ static UEnum* ESpeechRecognitionLanguage_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_ESpeechRecognitionLanguage.OuterSingleton;
 }
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<ESpeechRecognitionLanguage>()
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionLanguage>()
 {
 	return ESpeechRecognitionLanguage_StaticEnum();
 }
@@ -241,7 +249,7 @@ struct Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionLanguage_Statics
 		{ "ESpeechRecognitionLanguage::VE_Russian", (int64)ESpeechRecognitionLanguage::VE_Russian },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionLanguage_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_SpeechRecognition_ESpeechRecognitionLanguage_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition,
 	nullptr,
@@ -274,7 +282,7 @@ static UEnum* EPhraseRecognitionTolerance_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EPhraseRecognitionTolerance.OuterSingleton;
 }
-template<> SPEECHRECOGNITION_API UEnum* StaticEnum<EPhraseRecognitionTolerance>()
+template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<EPhraseRecognitionTolerance>()
 {
 	return EPhraseRecognitionTolerance_StaticEnum();
 }
@@ -319,7 +327,7 @@ struct Z_Construct_UEnum_SpeechRecognition_EPhraseRecognitionTolerance_Statics
 		{ "EPhraseRecognitionTolerance::VE_10", (int64)EPhraseRecognitionTolerance::VE_10 },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_SpeechRecognition_EPhraseRecognitionTolerance_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_SpeechRecognition_EPhraseRecognitionTolerance_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_SpeechRecognition,
 	nullptr,
@@ -343,17 +351,10 @@ UEnum* Z_Construct_UEnum_SpeechRecognition_EPhraseRecognitionTolerance()
 // ********** End Enum EPhraseRecognitionTolerance *************************************************
 
 // ********** Begin ScriptStruct FRecognitionPhrase ************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FRecognitionPhrase;
-class UScriptStruct* FRecognitionPhrase::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FRecognitionPhrase.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FRecognitionPhrase.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FRecognitionPhrase, (UObject*)Z_Construct_UPackage__Script_SpeechRecognition(), TEXT("RecognitionPhrase"));
-	}
-	return Z_Registration_Info_UScriptStruct_FRecognitionPhrase.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FRecognitionPhrase); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FRecognitionPhrase); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -368,25 +369,40 @@ struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics
 		{ "ModuleRelativePath", "Public/SpeechRecognition.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FRecognitionPhrase constinit property declarations ****************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_phrase;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_tolerance_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_tolerance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FRecognitionPhrase constinit property declarations ******************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FRecognitionPhrase>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FRecognitionPhrase;
+class UScriptStruct* FRecognitionPhrase::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FRecognitionPhrase.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FRecognitionPhrase.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FRecognitionPhrase, (UObject*)Z_Construct_UPackage__Script_SpeechRecognition(), TEXT("RecognitionPhrase"));
+	}
+	return Z_Registration_Info_UScriptStruct_FRecognitionPhrase.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FRecognitionPhrase Property Definitions ***************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_phrase = { "phrase", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRecognitionPhrase, phrase), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_phrase_MetaData), NewProp_phrase_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_tolerance_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_tolerance = { "tolerance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRecognitionPhrase, tolerance), Z_Construct_UEnum_SpeechRecognition_EPhraseRecognitionTolerance, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_tolerance_MetaData), NewProp_tolerance_MetaData) }; // 3521483791
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_tolerance = { "tolerance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRecognitionPhrase, tolerance), Z_Construct_UEnum_SpeechRecognition_EPhraseRecognitionTolerance, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_tolerance_MetaData), NewProp_tolerance_MetaData) }; // 854638383
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_phrase,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_tolerance_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewProp_tolerance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FRecognitionPhrase Property Definitions *****************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_SpeechRecognition,
 	nullptr,
@@ -406,7 +422,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FRecognitionPhrase()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FRecognitionPhrase.InnerSingleton, Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FRecognitionPhrase.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FRecognitionPhrase.InnerSingleton);
 }
 // ********** End ScriptStruct FRecognitionPhrase **************************************************
 
@@ -414,20 +430,22 @@ UScriptStruct* Z_Construct_UScriptStruct_FRecognitionPhrase()
 struct Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ ESpeechRecognitionMode_StaticEnum, TEXT("ESpeechRecognitionMode"), &Z_Registration_Info_UEnum_ESpeechRecognitionMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1113661939U) },
-		{ ESpeechRecognitionParamType_StaticEnum, TEXT("ESpeechRecognitionParamType"), &Z_Registration_Info_UEnum_ESpeechRecognitionParamType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3686854189U) },
-		{ ESpeechRecognitionLanguage_StaticEnum, TEXT("ESpeechRecognitionLanguage"), &Z_Registration_Info_UEnum_ESpeechRecognitionLanguage, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1599921248U) },
-		{ EPhraseRecognitionTolerance_StaticEnum, TEXT("EPhraseRecognitionTolerance"), &Z_Registration_Info_UEnum_EPhraseRecognitionTolerance, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3521483791U) },
+		{ ESpeechRecognitionMode_StaticEnum, TEXT("ESpeechRecognitionMode"), &Z_Registration_Info_UEnum_ESpeechRecognitionMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 149684720U) },
+		{ ESpeechRecognitionParamType_StaticEnum, TEXT("ESpeechRecognitionParamType"), &Z_Registration_Info_UEnum_ESpeechRecognitionParamType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1846369156U) },
+		{ ESpeechRecognitionLanguage_StaticEnum, TEXT("ESpeechRecognitionLanguage"), &Z_Registration_Info_UEnum_ESpeechRecognitionLanguage, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2879068059U) },
+		{ EPhraseRecognitionTolerance_StaticEnum, TEXT("EPhraseRecognitionTolerance"), &Z_Registration_Info_UEnum_EPhraseRecognitionTolerance, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 854638383U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FRecognisedPhrases::StaticStruct, Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::NewStructOps, TEXT("RecognisedPhrases"), &Z_Registration_Info_UScriptStruct_FRecognisedPhrases, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRecognisedPhrases), 1778546128U) },
-		{ FRecognitionPhrase::StaticStruct, Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewStructOps, TEXT("RecognitionPhrase"), &Z_Registration_Info_UScriptStruct_FRecognitionPhrase, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRecognitionPhrase), 1793235022U) },
+		{ FRecognisedPhrases::StaticStruct, Z_Construct_UScriptStruct_FRecognisedPhrases_Statics::NewStructOps, TEXT("RecognisedPhrases"),&Z_Registration_Info_UScriptStruct_FRecognisedPhrases, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRecognisedPhrases), 3159322720U) },
+		{ FRecognitionPhrase::StaticStruct, Z_Construct_UScriptStruct_FRecognitionPhrase_Statics::NewStructOps, TEXT("RecognitionPhrase"),&Z_Registration_Info_UScriptStruct_FRecognitionPhrase, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRecognitionPhrase), 1570367108U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_1830744946(TEXT("/Script/SpeechRecognition"),
+}; // Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_1346417915{
+	TEXT("/Script/SpeechRecognition"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h__Script_SpeechRecognition_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
