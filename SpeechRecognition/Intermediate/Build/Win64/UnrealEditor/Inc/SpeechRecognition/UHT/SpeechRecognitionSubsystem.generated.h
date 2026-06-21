@@ -12,6 +12,7 @@
 #define SPEECHRECOGNITION_SpeechRecognitionSubsystem_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -19,34 +20,6 @@ enum class ESpeechRecognitionLanguage : uint8;
 enum class ESpeechRecognitionParamType : uint8;
 struct FRecognisedPhrases;
 struct FRecognitionPhrase;
-
-// ********** Begin Delegate FStartedSpeakingSignature *********************************************
-#define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_10_DELEGATE \
-SPEECHRECOGNITION_API void FStartedSpeakingSignature_DelegateWrapper(const FMulticastScriptDelegate& StartedSpeakingSignature);
-
-
-// ********** End Delegate FStartedSpeakingSignature ***********************************************
-
-// ********** Begin Delegate FStoppedSpeakingSignature *********************************************
-#define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_11_DELEGATE \
-SPEECHRECOGNITION_API void FStoppedSpeakingSignature_DelegateWrapper(const FMulticastScriptDelegate& StoppedSpeakingSignature);
-
-
-// ********** End Delegate FStoppedSpeakingSignature ***********************************************
-
-// ********** Begin Delegate FWordsSpokenSignature *************************************************
-#define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_12_DELEGATE \
-SPEECHRECOGNITION_API void FWordsSpokenSignature_DelegateWrapper(const FMulticastScriptDelegate& WordsSpokenSignature, FRecognisedPhrases Text);
-
-
-// ********** End Delegate FWordsSpokenSignature ***************************************************
-
-// ********** Begin Delegate FUnknownPhraseSignature ***********************************************
-#define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_13_DELEGATE \
-SPEECHRECOGNITION_API void FUnknownPhraseSignature_DelegateWrapper(const FMulticastScriptDelegate& UnknownPhraseSignature);
-
-
-// ********** End Delegate FUnknownPhraseSignature *************************************************
 
 // ********** Begin Class USpeechRecognitionSubsystem **********************************************
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
@@ -64,16 +37,14 @@ SPEECHRECOGNITION_API void FUnknownPhraseSignature_DelegateWrapper(const FMultic
 
 
 struct Z_Construct_UClass_USpeechRecognitionSubsystem_Statics;
-SPEECHRECOGNITION_API UClass* Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister();
+SPEECHRECOGNITION_API UClass* Z_Construct_UClass_USpeechRecognitionSubsystem(ETypeConstructPhase);
 
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionSubsystem_h_18_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUSpeechRecognitionSubsystem(); \
 	friend struct ::Z_Construct_UClass_USpeechRecognitionSubsystem_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend SPEECHRECOGNITION_API UClass* ::Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister(); \
+	friend SPEECHRECOGNITION_API UClass* ::Z_Construct_UClass_USpeechRecognitionSubsystem(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(USpeechRecognitionSubsystem, UWorldSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SpeechRecognition"), Z_Construct_UClass_USpeechRecognitionSubsystem_NoRegister) \
+	DECLARE_CLASS2(USpeechRecognitionSubsystem, UWorldSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SpeechRecognition"), Z_Construct_UClass_USpeechRecognitionSubsystem) \
 	DECLARE_SERIALIZER(USpeechRecognitionSubsystem)
 
 

@@ -12,15 +12,19 @@
 #define SPEECHRECOGNITION_SpeechRecognition_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
+#include "Templates/IsUEnumClass.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FRecognisedPhrases ************************************************
 struct Z_Construct_UScriptStruct_FRecognisedPhrases_Statics;
+SPEECHRECOGNITION_API UScriptStruct* Z_Construct_UScriptStruct_FRecognisedPhrases(ETypeConstructPhase);
+
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h_12_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FRecognisedPhrases_Statics; \
-	SPEECHRECOGNITION_API static class UScriptStruct* StaticStruct();
+	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FRecognisedPhrases(ETypeConstructPhase::Inner); }
 
 
 struct FRecognisedPhrases;
@@ -28,9 +32,11 @@ struct FRecognisedPhrases;
 
 // ********** Begin ScriptStruct FRecognitionPhrase ************************************************
 struct Z_Construct_UScriptStruct_FRecognitionPhrase_Statics;
+SPEECHRECOGNITION_API UScriptStruct* Z_Construct_UScriptStruct_FRecognitionPhrase(ETypeConstructPhase);
+
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognition_h_67_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FRecognitionPhrase_Statics; \
-	SPEECHRECOGNITION_API static class UScriptStruct* StaticStruct();
+	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FRecognitionPhrase(ETypeConstructPhase::Inner); }
 
 
 struct FRecognitionPhrase;
@@ -47,7 +53,7 @@ struct FRecognitionPhrase;
 
 enum class ESpeechRecognitionMode : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionMode> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionMode>();
+template<> UE_NODEBUG SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionMode>();
 // ********** End Enum ESpeechRecognitionMode ******************************************************
 
 // ********** Begin Enum ESpeechRecognitionParamType ***********************************************
@@ -59,7 +65,7 @@ template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecogni
 
 enum class ESpeechRecognitionParamType : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionParamType> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionParamType>();
+template<> UE_NODEBUG SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionParamType>();
 // ********** End Enum ESpeechRecognitionParamType *************************************************
 
 // ********** Begin Enum ESpeechRecognitionLanguage ************************************************
@@ -72,7 +78,7 @@ template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecogni
 
 enum class ESpeechRecognitionLanguage : uint8;
 template<> struct TIsUEnumClass<ESpeechRecognitionLanguage> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionLanguage>();
+template<> UE_NODEBUG SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecognitionLanguage>();
 // ********** End Enum ESpeechRecognitionLanguage **************************************************
 
 // ********** Begin Enum EPhraseRecognitionTolerance ***********************************************
@@ -90,7 +96,7 @@ template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<ESpeechRecogni
 
 enum class EPhraseRecognitionTolerance : uint8;
 template<> struct TIsUEnumClass<EPhraseRecognitionTolerance> { enum { Value = true }; };
-template<> SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<EPhraseRecognitionTolerance>();
+template<> UE_NODEBUG SPEECHRECOGNITION_NON_ATTRIBUTED_API UEnum* StaticEnum<EPhraseRecognitionTolerance>();
 // ********** End Enum EPhraseRecognitionTolerance *************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

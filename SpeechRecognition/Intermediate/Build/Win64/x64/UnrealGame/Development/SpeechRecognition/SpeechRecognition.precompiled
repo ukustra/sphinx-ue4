@@ -5,5 +5,6 @@
 		"SpeechRecognitionGameStateBase.cpp.obj",
 		"SpeechRecognitionSubsystem.cpp.obj",
 		"SpeechRecognitionWorker.cpp.obj"
-	]
+	],
+	"ToolChainVersion": "14.44.35226"
 }

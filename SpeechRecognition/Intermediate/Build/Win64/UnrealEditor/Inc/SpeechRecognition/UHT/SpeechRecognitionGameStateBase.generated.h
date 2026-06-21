@@ -12,6 +12,7 @@
 #define SPEECHRECOGNITION_SpeechRecognitionGameStateBase_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -19,16 +20,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ASpeechRecognitionGameStateBase ******************************************
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h_15_CALLBACK_WRAPPERS
 struct Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics;
-SPEECHRECOGNITION_API UClass* Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister();
+SPEECHRECOGNITION_API UClass* Z_Construct_UClass_ASpeechRecognitionGameStateBase(ETypeConstructPhase);
 
 #define FID_Users_Ula_Desktop_SpeechRecognition_HostProject_Plugins_SpeechRecognition_Source_SpeechRecognition_Public_SpeechRecognitionGameStateBase_h_15_INCLASS \
 private: \
-	static void StaticRegisterNativesASpeechRecognitionGameStateBase(); \
 	friend struct ::Z_Construct_UClass_ASpeechRecognitionGameStateBase_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend SPEECHRECOGNITION_API UClass* ::Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister(); \
+	friend SPEECHRECOGNITION_API UClass* ::Z_Construct_UClass_ASpeechRecognitionGameStateBase(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(ASpeechRecognitionGameStateBase, AGameStateBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SpeechRecognition"), Z_Construct_UClass_ASpeechRecognitionGameStateBase_NoRegister) \
+	DECLARE_CLASS2(ASpeechRecognitionGameStateBase, AGameStateBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SpeechRecognition"), Z_Construct_UClass_ASpeechRecognitionGameStateBase) \
 	DECLARE_SERIALIZER(ASpeechRecognitionGameStateBase)
 
 
